@@ -343,6 +343,11 @@ public class LoadingButton extends View {
         invalidate();
     }
 
+    public void setTextSize(int size){
+        mTextPaint.setTextSize(size*mDensity);
+        mTextWidth = mTextPaint.measureText(mText);
+        invalidate();
+    }
 
     public void setResetAfterFailed(boolean resetAfterFailed){
         this.resetAfterFailed = resetAfterFailed;
