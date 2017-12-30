@@ -349,6 +349,11 @@ public class LoadingButton extends View {
         invalidate();
     }
 
+    public void setTextColor(int color){
+        mTextPaint.setColor(color);
+        invalidate();
+    }
+
     public void setResetAfterFailed(boolean resetAfterFailed){
         this.resetAfterFailed = resetAfterFailed;
     }
